@@ -1,19 +1,13 @@
+-- System Libaries
+require ( "libs" )
+
 -- Key bindings and shortcuts
 require ( "mods" )
 
 -- Awesome error notifications
 require ( "notifications" )
 
--- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
-awful.rules = require("awful.rules")
-require("awful.autofocus")
--- Widget and layout library
-local wibox = require("wibox")
--- Theme handling library
-local beautiful = require("beautiful")
-local menubar = require("menubar")
+
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
