@@ -44,6 +44,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 terminal = "terminator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
+web_browser = "google-chrome-unstable"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -271,7 +272,11 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({ modkey }, "p", function() menubar.show() end),
+
+    -- Web browser
+    awful.key({ modkey,           }, "i", function () awful.util.spawn(web_browser) end)
+    
 )
 
 clientkeys = awful.util.table.join(
