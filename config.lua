@@ -5,5 +5,8 @@ return {
     terminal = "terminator",
     -- CLI based text editor
     editor = "vim",
+    
+    -- config base commands
+    -- cli editor.run
     editor_cmd = config.terminal .. " -e " .. config.editor
 }
