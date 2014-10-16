@@ -13,11 +13,6 @@ require ( "notifications" )
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
--- This is used later as the default terminal and editor to run.
-terminal = "terminator"
-editor = os.getenv("EDITOR") or "vim"
-editor_cmd = terminal .. " -e " .. editor
-
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
@@ -58,7 +53,7 @@ end
 -- Create a laucher widget and a main menu
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
+   { "edit config", config.editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
