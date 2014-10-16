@@ -1,5 +1,9 @@
+
 -- System Libaries
 require ( "libs" )
+
+-- Load  
+config = require ( "config" )
 
 -- Key bindings and shortcuts
 require ( "mods" )
@@ -7,11 +11,13 @@ require ( "mods" )
 -- Awesome error notifications
 require ( "notifications" )
 
+-- Awesome error notifications
+require ( "menu" )
 
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.config/awesome/theme/theme.lua")
+beautiful.init("~/.awesome/theme/theme.lua")
 
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
