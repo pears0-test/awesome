@@ -1,5 +1,6 @@
-awful.rules = require("awful.rules")
+-- Global libs
 awful = require("awful")
+awful.rules = require("awful.rules")
 beautiful = require("beautiful")
 gears = require("gears")
 lain = require("lain")
