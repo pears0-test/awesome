@@ -14,14 +14,13 @@ require ( "notifications" )
 -- Awesome error notifications
 require ( "menu" )
 
-
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init("~/.config/awesome/theme/theme.lua")
 
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
-local layouts =
+layouts =
 {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
