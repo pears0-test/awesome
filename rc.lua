@@ -17,7 +17,7 @@ require ( "menu" )
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.awesome/theme/theme.lua")
+beautiful.init("~/.config/awesome/theme/theme.lua")
 
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
