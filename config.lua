@@ -2,7 +2,7 @@
 
 
 -- Terminal emulator
-terminal = "terminator"
+terminal = "urxvt"
 
 -- CLI based text editor
 editor = "vim"
