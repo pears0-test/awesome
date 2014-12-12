@@ -1,15 +1,11 @@
 -- Config to be called as required
 
-local config ={
 
-    -- Terminal emulator
-    terminal = "terminator",
+-- Terminal emulator
+terminal = "terminator",
 
-    -- CLI based text editor
-    editor = "vim",
+-- CLI based text editor
+editor = "vim",
 
-}
+editor_cmd = terminal .. " -e " .. editor
 
-config.editor_cmd = config.terminal .. " -e " .. config.editor
-
-return config
