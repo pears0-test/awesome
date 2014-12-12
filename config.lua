@@ -2,10 +2,10 @@
 
 
 -- Terminal emulator
-terminal = "terminator",
+terminal = "terminator"
 
 -- CLI based text editor
-editor = "vim",
+editor = "vim"
 
 editor_cmd = terminal .. " -e " .. editor
 
