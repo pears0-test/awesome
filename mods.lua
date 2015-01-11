@@ -69,6 +69,7 @@ globalkeys = awful.util.table.join(
 
     -- custom launchers
     awful.key({ modkey }, "i", function () awful.util.spawn("google-chrome-unstable") end)
+    awful.key({ modkey }, "g", function () awful.util.spawn("steam -bigpicture") end)
 )
 
 clientkeys = awful.util.table.join(
